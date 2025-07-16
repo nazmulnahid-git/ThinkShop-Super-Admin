@@ -361,21 +361,28 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Ready to Start Selling?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join thousands of entrepreneurs who trust ThinkShop to power their online stores.
+      <section className="relative overflow-hidden py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-700 via-purple-600 to-blue-600 text-white">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl font-extrabold mb-6 leading-tight drop-shadow-md">
+            Ready to Launch Your Store?
+          </h2>
+          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
+            Join thousands of ambitious creators growing their businesses with{" "}
+            <span className="font-semibold">ThinkShop</span>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/register">
-              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-4">
+              <button className="text-lg font-semibold px-8 py-4 rounded-xl bg-white text-purple-700 border border-white shadow-lg hover:bg-purple-100 transition duration-300">
                 Start Your Free Trial
-              </Button>
+              </button>
             </Link>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4">
-              Schedule Demo
-            </Button>
+            <button className="text-lg font-semibold px-8 py-4 rounded-xl border-2 border-white text-white hover:bg-white hover:text-purple-700 shadow-lg transition duration-300">
+              Schedule a Demo
+            </button>
           </div>
         </div>
       </section>
